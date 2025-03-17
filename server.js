@@ -9,6 +9,7 @@ import announcementRoutes from './routes/announcementRoutes.js';
 import subjectRouter from './routes/subjectRoutes.js';
 import classRouter from './routes/classRoutes.js';
 import studentRouter from './routes/studentRoutes.js';
+import admissionRouter from './routes/admissionRoutes.js';
 // import examNameRouter from './routes/examNameRouter.js';
 
 dotenv.config();
@@ -26,6 +27,7 @@ app.use('/api/announcement', announcementRoutes);
 app.use('/api/subject', subjectRouter);
 app.use('/api/class', classRouter);
 app.use('/api/student', studentRouter);
+app.use('/api/admission', admissionRouter);
 // app.use('/api/exam-name', examNameRouter);
 
 // Database connection
