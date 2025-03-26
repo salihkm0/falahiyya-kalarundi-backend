@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const admissionSchema = new mongoose.Schema({
   studentName: { type: String, required: true },
-  aadhaar: { type: String, required: true },
+  aadhaar: { type: String},
   dob: { type: Date, required: true },
   gender: { type: String, required: true },
   houseAddress: { type: String, required: true },
